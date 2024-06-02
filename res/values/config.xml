@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="config_automatic_brightness_available">true</bool>
+
+	<integer name="config_defaultPeakRefreshRate">90</integer>
+    <integer name="config_defaultRefreshRate">90</integer>
+    <integer name="config_screenBrightnessDark">1</integer>
+    <integer name="config_screenBrightnessDim">10</integer>
+    <integer name="config_screenBrightnessDoze">1</integer>
+    <integer name="config_screenBrightnessForVrSettingDefault">86</integer>
+    <integer name="config_screenBrightnessForVrSettingMaximum">255</integer>
+    <integer name="config_screenBrightnessForVrSettingMinimum">79</integer>
+    <integer name="config_screenBrightnessSettingDefault">64</integer>
+    <integer name="config_screenBrightnessSettingMaximum">255</integer>
+    <integer name="config_screenBrightnessSettingMinimum">10</integer>
+    <integer name="config_autoBrightnessBrighteningLightDebounce">1000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">1000</integer>
+    <integer name="config_autoBrightnessLightSensorRate">250</integer>
+    <integer name="config_brightness_ramp_rate_fast">2466</integer>
+    <integer name="config_brightness_ramp_rate_slow">1973</integer>
+
+    <integer-array name="config_autoBrightnessDisplayValuesNits">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>25</item>
+        <item>40</item>
+        <item>50</item>
+        <item>65</item>
+        <item>75</item>
+        <item>90</item>
+        <item>105</item>
+        <item>125</item>
+        <item>140</item>
+        <item>165</item>
+        <item>180</item>
+        <item>195</item>
+        <item>215</item>
+        <item>235</item>
+        <item>250</item>
+        <item>275</item>
+        <item>290</item>
+        <item>310</item>
+        <item>340</item>
+        <item>375</item>
+        <item>390</item>
+        <item>410</item>
+        <item>440</item>
+        <item>470</item>
+        <item>495</item>
+        <item>520</item>
+        <item>540</item>
+        <item>560</item>
+        <item>580</item>
+        <item>600</item>
+        <item>620</item>
+        <item>640</item>
+        <item>660</item>
+        <item>680</item>
+        <item>700</item>
+    </integer-array>
+    
+    <integer-array name="config_autoBrightnessLevels">
+        <item>10</item>
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+    </integer-array>
+
+    <integer-array name="config_autoBrightnessLcdBacklightValues">
+        <item>5</item>
+        <item>10</item>
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>125</item>
+        <item>150</item>
+        <item>175</item>
+        <item>200</item>
+        <item>225</item>
+        <item>250</item>
+        <item>275</item>
+        <item>300</item>
+        <item>325</item>
+        <item>350</item>
+        <item>375</item>
+        <item>400</item>
+        <item>450</item>
+        <item>500</item>
+    </integer-array>
+
+	<dimen name="rounded_corner_radius">96.0px</dimen>
+    <dimen name="rounded_corner_radius_bottom">96.0px</dimen>
+    <dimen name="rounded_corner_radius_top">96.0px</dimen>
+    <dimen name="status_bar_height_default">76.0px</dimen>
+    <dimen name="status_bar_height_portrait">76.0px</dimen>
+    <string name="config_mainBuiltInDisplayCutout">M 0,0 H -50 V 115 H 50 V 0 H 0 Z</string>
+</resources>
