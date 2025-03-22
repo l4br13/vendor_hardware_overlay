@@ -5,11 +5,9 @@ set -e
 export LD_LIBRARY_PATH=.
 export PATH=.:$PATH
 
-name=treble-overlay-xiaomi-fleur
-
 path=$(dirname $0)
 
-for i in $path/devices/*;
+for i in $path/src/*;
 do
 	if [ -f $i/AndroidManifest.xml ]; then
 		echo "Building $(basename $i).apk"

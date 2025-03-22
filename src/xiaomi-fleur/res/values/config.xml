@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <bool name="config_automatic_brightness_available">true</bool>
+    <bool name="config_useDevInputEventForAudioJack">true</bool>
+    <bool name="config_supportAudioSourceUnprocessed">true</bool>
+    <bool name="config_showNavigationBar">true</bool>
+    <bool name="config_enableBurnInProtection">true</bool>
+    <bool name="config_setColorTransformAccelerated">true</bool>
+    <bool name="config_dozeAfterScreenOffByDefault">true</bool>
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
 
 	<integer name="config_defaultPeakRefreshRate">90</integer>
     <integer name="config_defaultRefreshRate">90</integer>
@@ -97,7 +104,10 @@
 	<dimen name="rounded_corner_radius">96.0px</dimen>
     <dimen name="rounded_corner_radius_bottom">96.0px</dimen>
     <dimen name="rounded_corner_radius_top">96.0px</dimen>
-    <dimen name="status_bar_height_default">76.0px</dimen>
-    <dimen name="status_bar_height_portrait">76.0px</dimen>
+    <dimen name="status_bar_height">96.0px</dimen>
+    <dimen name="status_bar_height_default">96.0px</dimen>
+    <dimen name="status_bar_height_portrait">96.0px</dimen>
+    <dimen name="status_bar_height_landscape">96.0px</dimen>
     <string name="config_mainBuiltInDisplayCutout">M 0,0 H -50 V 115 H 50 V 0 H 0 Z</string>
+    <!-- 115 -->
 </resources>
