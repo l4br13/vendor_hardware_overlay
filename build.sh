@@ -6,19 +6,19 @@ export LD_LIBRARY_PATH=.
 export PATH=.:$PATH
 
 path=$(dirname $0)
+source=$path/src
 
-for i in $path/src/*;
-do
-	if [ -f $i/AndroidManifest.xml ]; then
-		echo "Building $(basename $i).apk"
-		aapt package -f -F "$(dirname $0)/$(basename $i)-unsigned.apk" -M "$i/AndroidManifest.xml" -S "$i/res" -I android.jar
-		LD_LIBRARY_PATH=./signapk/ java -jar signapk/signapk.jar keys/platform.x509.pem keys/platform.pk8 "$(basename $i)-unsigned.apk" "$(basename $i).apk"
-		rm -f "$(basename $i)-unsigned.apk"
+if [ -n "$1" ]; then
+	if [ -d $source/$1 ]; then
+		echo $source/$1
 	fi
-done
-
-#echo "Building $name"
-
-#aapt package -f -F "${name}-unsigned.apk" -M "$path/AndroidManifest.xml" -S "$path/res" -I android.jar
-
-#rm -f "${name}-unsigned.apk"
+else
+	for i in $source/*; do
+		if [ -f $i/AndroidManifest.xml ]; then
+			echo "Building $(basename $i).apk"
+			aapt package -f -F "$path/$(basename $i)-unsigned.apk" -M "$i/AndroidManifest.xml" -S "$i/res" -I $path/android.jar
+			LD_LIBRARY_PATH=$path/signapk/ java -jar $path/signapk/signapk.jar $path/keys/platform.x509.pem $path/keys/platform.pk8 "$path/$(basename $i)-unsigned.apk" "$path/$(basename $i).apk"
+			rm -f "$path/$(basename $i)-unsigned.apk"
+		fi
+	done
+fi
